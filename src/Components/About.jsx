@@ -54,8 +54,8 @@ function About() {
       </div>
       {/* company stats  */}
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto bg-neutralSilver py-16 ">
-        <div className=" gap-8  flex flex-row md:flex-row justify-between items-center ">
-          <div className="md:w-1/2">
+        <div className=" gap-8 flex flex-col md:flex-row justify-between items-center ">
+          <div className=" md:w-1/2">
             <h2 className="text-4xl text-neutralGray font-semibold mb-4 md:w-2/3 ">
               Helping a local <br />
               <span className="text-brandPrimary">
@@ -65,7 +65,7 @@ function About() {
             <p>We reached here with our hard and dedication.</p>
           </div>
           {/* Stats */}
-          <div className="col-span w-1/2 grid grid-cols-2 justify-center items-center space-y-4">
+          <div className="col-span w-1/2 grid grid-cols-2 justify-center items-center space-y-4 ">
             {member.map((mem, i) => (
               <div
                 className={`col-span-1 col-start-${i + 1} flex flex-col `}
