@@ -7,10 +7,11 @@ import Home from "./Components/Home";
 import Service from "./Components/Service";
 import About from "./Components/About";
 import Products from "./Components/Products";
+import Blog from "./Components/Blog";
+import Newsleter from "./Components/Newsleter";
+import Footerr from "./Components/Footer";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Navbar />
@@ -18,6 +19,9 @@ function App() {
       <Service />
       <About />
       <Products />
+      <Blog />
+      <Newsleter />
+      <Footerr />
     </>
   );
 }

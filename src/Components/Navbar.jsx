@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/Logo.png";
-import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { GrClose } from "react-icons/gr";
+import { Link } from "react-scroll";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -64,18 +64,18 @@ function Navbar() {
         }`}
       >
         <div className="flex justify-between items-center text-base gap-8 ">
-          <a href="/">
+          <a href="/ ">
             <img src={logo} alt="logo" />
           </a>
           <ul className="md:flex space-x-12 hidden">
             {navItems.map(({ link, path }, index) => (
-              <li
-                // to={path}
+              <Link
+                to={path}
                 key={index}
                 className="block text-base text-gray900 hover:text-brandPrimary first:font-medium  cursor-pointer"
               >
                 {link}
-              </li>
+              </Link>
             ))}
           </ul>
           {/* btn for larger devices  */}
